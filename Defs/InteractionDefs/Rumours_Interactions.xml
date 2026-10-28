@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Telling someone something private. Only to people they actually trust. -->
+  <InteractionDef>
+    <defName>RM_ShareSecret</defName>
+    <label>share a secret</label>
+    <workerClass>Rumours.InteractionWorker_ShareSecret</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/DeepTalk</symbol>
+    <recipientThought>RM_TrustedMe</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [told] [RECIPIENT_nameDef] [what], [caveat].</li>
+
+        <li>told(p=3)->told</li>
+        <li>told->quietly admitted to</li>
+        <li>told->let on to</li>
+        <li>told->trusted</li>
+
+        <li>what->something they have told nobody else</li>
+        <li>what->what really happened back then</li>
+        <li>what->a thing they are not proud of</li>
+        <li>what->who they used to be</li>
+        <li>what->what they are actually afraid of</li>
+
+        <li>caveat->and asked them to keep it to themselves</li>
+        <li>caveat->and immediately regretted it</li>
+        <li>caveat->having decided they could be trusted</li>
+        <li>caveat->without ever saying it was private</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <!-- Passing on what you think of a third person, whether or not any of it is true. -->
+  <InteractionDef>
+    <defName>RM_Rumour</defName>
+    <label>pass on a rumour</label>
+    <workerClass>Rumours.InteractionWorker_Rumour</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [said] [RECIPIENT_nameDef] [story].</li>
+
+        <li>said(p=3)->told</li>
+        <li>said->let slip to</li>
+        <li>said->mentioned to</li>
+        <li>said->confided in</li>
+
+        <li>story->what someone else here has been up to</li>
+        <li>story->something they heard about one of the others</li>
+        <li>story->a story about a colonist that may not be true</li>
+        <li>story->what they really think of one of the others</li>
+        <li>story->a thing that had not happened</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+  <!-- Making it right, or trying to. -->
+  <InteractionDef>
+    <defName>RM_Apologise</defName>
+    <label>apologise</label>
+    <workerClass>Rumours.InteractionWorker_Apologise</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/KindWords</symbol>
+    <recipientThought>RM_Apologised</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [apologised] [RECIPIENT_nameDef] [how].</li>
+
+        <li>apologised(p=3)->apologised to</li>
+        <li>apologised->made it up with</li>
+        <li>apologised->said sorry to</li>
+        <li>apologised->owned up to</li>
+
+        <li>how->without making excuses</li>
+        <li>how->for what was said</li>
+        <li>how->awkwardly, but they meant it</li>
+        <li>how->after putting it off for days</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

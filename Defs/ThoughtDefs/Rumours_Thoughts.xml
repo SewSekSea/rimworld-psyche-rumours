@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Being told something private. Given to the listener, about the person who confided. -->
+  <ThoughtDef>
+    <defName>RM_TrustedMe</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <showBubble>true</showBubble>
+    <durationDays>25</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>trusted me with something</label>
+        <baseOpinionOffset>16</baseOpinionOffset>
+      </li>
+    </stages>
+    <thoughtToMake>RM_TrustedMeMood</thoughtToMake>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RM_TrustedMeMood</defName>
+    <durationDays>4</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.8</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>trusted with something</label>
+        <description>They told me something they have told nobody else. I am not going to be the one who repeats it.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Finding out your secret went round the colony. Held for a very long time. -->
+  <ThoughtDef>
+    <defName>RM_Betrayed</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <showBubble>true</showBubble>
+    <durationDays>90</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>2</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>told everyone my business</label>
+        <baseOpinionOffset>-45</baseOpinionOffset>
+      </li>
+    </stages>
+    <thoughtToMake>RM_BetrayedMood</thoughtToMake>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RM_BetrayedMood</defName>
+    <durationDays>12</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>0.85</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>everyone knows now</label>
+        <description>I told one person. One. Now I can see it in how the rest of them look at me.</description>
+        <baseMoodEffect>-9</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--
+    The rumour itself, held by whoever believed it, about whoever it was about.
+    How much it moves their opinion is worked out when it is heard and kept on the thought,
+    so a story from someone persuasive keeps its weight afterwards.
+  -->
+  <ThoughtDef>
+    <defName>RM_HeardAbout</defName>
+    <thoughtClass>Rumours.Thought_Rumour</thoughtClass>
+    <showBubble>true</showBubble>
+    <durationDays>20</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>4</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>heard things about them</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Not everything people pass on is unkind. -->
+  <ThoughtDef>
+    <defName>RM_HeardWell</defName>
+    <thoughtClass>Rumours.Thought_Rumour</thoughtClass>
+    <durationDays>20</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>4</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>heard good things about them</label>
+        <baseOpinionOffset>14</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- A discreet colonist who let something slip anyway. -->
+  <ThoughtDef>
+    <defName>RM_ShouldNotHaveSaid</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>I should not have said that</label>
+        <description>It was not mine to repeat and I repeated it. I do not know why I did.</description>
+        <baseMoodEffect>-7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Apology, given to the person who was wronged, about the one who apologised. -->
+  <ThoughtDef>
+    <defName>RM_Apologised</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <showBubble>true</showBubble>
+    <durationDays>30</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>2</stackLimitForSameOtherPawn>
+    <stackedEffectMultiplier>0.6</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>said sorry, and meant it</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+    </stages>
+    <thoughtToMake>RM_ApologisedMood</thoughtToMake>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>RM_ApologisedMood</defName>
+    <durationDays>5</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>they apologised</label>
+        <description>They came and said it to my face without being made to. That is worth something.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- What it costs to apologise. -->
+  <ThoughtDef>
+    <defName>RM_HadToApologise</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>had to eat my words</label>
+        <description>I said sorry. It needed doing and I am glad it is done, but it was not pleasant.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

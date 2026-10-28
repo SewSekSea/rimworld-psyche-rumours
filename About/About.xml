@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Rumours</name>
+  <author>T&amp;B Modding</author>
+  <packageId>rumours.gossip</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Colonists talk about each other. Not all of it is true, and not all of it stays where you put it.
+
+Secrets
+- A colonist can tell someone something private. It brings the two of them closer, and from then on that person knows something.
+- Some people keep it. Some people do not. A secret told on is remembered for a very long time by whoever trusted them.
+
+Rumours
+- Colonists pass on what they think of other people, and it rubs off. Hearing that someone is awful from a person you trust makes you think less of them, whether or not you ever saw anything yourself.
+- How much it lands depends on who is talking, how much you rate them, and how good they are at it.
+- Some colonists make things up outright. A rumour can be entirely false and still cost its subject dearly.
+- A rumour fades. Time, and getting to know the person yourself, undoes it.
+
+Making it right
+- Colonists can apologise for something they did, which takes the edge off it. It is not free: it costs them to do it, and it does not erase everything.
+
+Who talks
+- A new trait in three strengths. The discreet keep things to themselves. Gossips cannot help repeating anything. Fabricators invent.
+
+Works with Crew: a rumour from someone in your own crew is believed far more readily than the same words from a rival, and betraying a crewmate's secret can be enough to break the crew apart. Crew is not required.
+
+This mod only changes how colonists feel about each other. It never changes how anyone aims, works or chooses a job.
+
+Requires Harmony. Safe to add to an existing save. RimWorld 1.6, no DLC needed.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>sociopath.trait</li>
+    <li>machiavelli.trait</li>
+    <li>crew.factions</li>
+  </loadAfter>
+</ModMetaData>

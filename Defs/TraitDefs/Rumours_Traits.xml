@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- How a colonist handles other people's business. Discreet at one end, inventing at the other. -->
+  <TraitDef>
+    <defName>RM_Tongue</defName>
+    <commonality>1.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>discreet</label>
+        <degree>-1</degree>
+        <commonality>1.4</commonality>
+        <description>{PAWN_nameDef} does not repeat things. Told something in confidence, {PAWN_pronoun} keeps it, and {PAWN_pronoun} has little time for stories about people who are not in the room. If {PAWN_pronoun} ever does let something slip, it sits badly with {PAWN_objective}.</description>
+        <statOffsets>
+          <SocialImpact>0.05</SocialImpact>
+        </statOffsets>
+      </li>
+      <li>
+        <label>gossip</label>
+        <degree>1</degree>
+        <commonality>1.4</commonality>
+        <description>{PAWN_nameDef} cannot leave a thing unsaid. Every conversation is an opportunity to pass on what someone else said, thought or did, and a secret told to {PAWN_objective} has a limited life expectancy.</description>
+        <socialFightChanceFactor>1.2</socialFightChanceFactor>
+      </li>
+      <li>
+        <label>fabricator</label>
+        <degree>2</degree>
+        <commonality>0.5</commonality>
+        <description>{PAWN_nameDef} does not merely repeat things. {PAWN_pronoun} invents them, fluently and without apparent motive, and {PAWN_possessive} inventions are rarely kind. People believe {PAWN_objective} more often than they should.</description>
+        <socialFightChanceFactor>1.4</socialFightChanceFactor>
+        <statOffsets>
+          <SocialImpact>0.15</SocialImpact>
+          <NegotiationAbility>0.1</NegotiationAbility>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

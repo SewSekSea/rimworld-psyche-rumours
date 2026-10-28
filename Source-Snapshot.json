@@ -1,0 +1,76 @@
+{
+  "name": "Rumours",
+  "packageId": "rumours.gossip",
+  "assemblyName": "Rumours",
+  "repositoryName": "rimworld-psyche-rumours",
+  "workshopId": "3805326383",
+  "metadataVersions": [
+    "1.6",
+    "1.7"
+  ],
+  "originalSourceUnit": "Psyche Mods/Rumours",
+  "sourceSnapshotUtc": "2026-10-28T17:10:14.759Z",
+  "sourceFileFingerprints": [
+    {
+      "path": "About/About.xml",
+      "sha256": "9FD336AA7F1727FD908A392C970A8C64B5FE604E2DA027BAC7A24EFD140257FB",
+      "bytes": 2257
+    },
+    {
+      "path": "About/Preview.png",
+      "sha256": "B1CEA0E0C47FE8239C5BAB9325A1C05F364E7204764A44DCED4E7824FC43D7AE",
+      "bytes": 115989
+    },
+    {
+      "path": "About/PublishedFileId.txt",
+      "sha256": "4F784B0CFD34BF359733FF761D9DA331C12E8530D79DD78BB5729DA25B0229C5",
+      "bytes": 10
+    },
+    {
+      "path": "Defs/InteractionDefs/Rumours_Interactions.xml",
+      "sha256": "EC8AE37CA024E8BD8DB2CB2E508A3AF02788FC911D8AEFD4F13AF61E0918C79E",
+      "bytes": 3098
+    },
+    {
+      "path": "Defs/ThoughtDefs/Rumours_Thoughts.xml",
+      "sha256": "7C7FABEE85129C5798877B940FC99AF8078F6EFBCE07A216BA8C78F2367A9C42",
+      "bytes": 5423
+    },
+    {
+      "path": "Defs/TraitDefs/Rumours_Traits.xml",
+      "sha256": "5CA4CE1F854DE8EA78F9192A7AA9EC2370044325F3D1100AD548C908B84F782E",
+      "bytes": 1809
+    },
+    {
+      "path": "Source/Rumours/Ledger.cs",
+      "sha256": "82D8D24C06224B1DC1D29473303163F98DCEE29C709857DADC40E4F02C3EBE26",
+      "bytes": 9202
+    },
+    {
+      "path": "Source/Rumours/Rumours.csproj",
+      "sha256": "478D632F9A9360F0774344C188B82878EF8FB5DE2918DD822A0E87FB2F06DC9C",
+      "bytes": 1629
+    },
+    {
+      "path": "Source/Rumours/RumoursCore.cs",
+      "sha256": "B3B764877BB570ACA45C0FDE4D2B3D448BFDB640C3C82FC25E18C697898101A3",
+      "bytes": 7629
+    },
+    {
+      "path": "Source/Rumours/Settings.cs",
+      "sha256": "4BAB1E607A5715280BD527B8E996CA39538EFC17A94B57D767CB5221EC735943",
+      "bytes": 4061
+    },
+    {
+      "path": "Source/Rumours/Workers.cs",
+      "sha256": "3E2570433B78F08C67CF773A1E7E70AD0BB628ECDB5BFE3AE5ABA36674424DB6",
+      "bytes": 6408
+    }
+  ],
+  "stagedProjectAdjustments": [],
+  "build16": "NOT_RUN_THIS_PASS",
+  "build17": "COMPILED_AGAINST_LOCAL_1.7_API",
+  "nativePlaytest": "NOT_RUN_THIS_PUBLICATION_PASS",
+  "gameplaySourceModified": false,
+  "compiled17SHA256": "A0B38985F43CAFE7690A82D383DDFD3AF690E46ADBFA51CD4EAA34B496713B73"
+}
